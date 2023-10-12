@@ -40,4 +40,12 @@ summary.lm(simp1)
 
 RSE: 7.511 ARS: 0.5073
 
+```{r}
+simp2 <- lm(LENGTH~HEADLEN,data=bears)
+plot(LENGTH~HEADLEN,data=bears)
+abline(simp2)
+summary.lm(simp2)
+```
+
+RSE: 4.235 ARS: 0.8434
 
