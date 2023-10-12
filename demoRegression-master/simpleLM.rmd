@@ -66,3 +66,12 @@ summary.lm(simp4)
 ```
 
 RSE: 4.939 ARS: 0.7869
+
+```{r}
+simp5 <- lm(LENGTH~WEIGHT,data=bears)
+plot(LENGTH~WEIGHT,data=bears)
+abline(simp5)
+summary.lm(simp5)
+```
+
+RSE: 5.432 ARS: 0.7423
