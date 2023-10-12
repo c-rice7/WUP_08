@@ -38,7 +38,7 @@ abline(simp1)
 summary.lm(simp1)
 ```
 
-The prediction of overall length based on neck dimensions has a residual standard error of: 7.511 and an adjusted r-squared value of: 0.5073.
+The prediction of overall length based on age of the bear has a residual standard error of: 7.511 and an adjusted r-squared value of: 0.5073.
 
 ```{r}
 simp2 <- lm(LENGTH~HEADLEN,data=bears)
@@ -47,7 +47,7 @@ abline(simp2)
 summary.lm(simp2)
 ```
 
-The prediction of overall length based on neck dimensions has a residual standard error of: 4.235 and an adjusted r-squared value of: 0.8434.
+The prediction of overall length based on head length dimensions has a residual standard error of: 4.235 and an adjusted r-squared value of: 0.8434.
 
 ```{r}
 simp3 <- lm(LENGTH~HEADWTH,data=bears)
@@ -56,7 +56,7 @@ abline(simp3)
 summary.lm(simp3)
 ```
 
-The prediction of overall length based on neck dimensions has a residual standard error of: 7.320 and an adjusted r-squared value of: 0.5321.
+The prediction of overall length based on head width dimensions has a residual standard error of: 7.320 and an adjusted r-squared value of: 0.5321.
 
 ```{r}
 simp4 <- lm(LENGTH~CHEST,data=bears)
@@ -65,7 +65,7 @@ abline(simp4)
 summary.lm(simp4)
 ```
 
-The prediction of overall length based on neck dimensions has a residual standard error of: 4.939 and an adjusted r-squared value of: 0.7869.
+The prediction of overall length based on chest dimensions has a residual standard error of: 4.939 and an adjusted r-squared value of: 0.7869.
 
 ```{r}
 simp5 <- lm(LENGTH~WEIGHT,data=bears)
@@ -74,4 +74,17 @@ abline(simp5)
 summary.lm(simp5)
 ```
 
-The prediction of overall length based on neck dimensions has a residual standard error of: 5.432 and an adjusted r-squared value of: 0.7423.
+The prediction of overall length based on weight of the bear has a residual standard error of: 5.432 and an adjusted r-squared value of: 0.7423.
+
+## Conclusions & Numerical Ranking
+
+The ranked variables, from best to worst, based on residual standard error(RSE) and adjusted r-squared(ARS) value as predictors of overall length of a bear are:
+  
+  1. Head Length: RSE: 4.325 ARS: 0.8434
+  2. Chest Measurement: RSE: 4.939 ARS: 0.7869
+  3. Neck Measurement: RSE: 5.376 ARS: 0.7476
+  4. Weight: RSE: 5.432 ARS: 0.7423
+  5. Head Width: RSE: 7.32 ARS: 0.5321
+  6. Age: RSE: 7.511 ARS: 0.5073
+  
+This ranking/trend is implied by both the adjusted r-squared value of the variable comparisons decreasing in correspondence with their ranking and the residual standard error increasing in correspondence as their ranking decreases. Head length is the best predictor variable of the overall length of the bear and age is the worst predictor variable.
