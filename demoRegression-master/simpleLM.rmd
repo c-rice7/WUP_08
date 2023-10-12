@@ -26,8 +26,8 @@ plot(LENGTH~NECK,data=bears)
 abline(simp)
 summary.lm(simp)
 ```
-RSE: 5.376 ARS: 0.7476
 
+The prediction of overall length based on neck dimensions has a residual standard error of: 5.376 and an adjusted r-squared value of: 0.7476.
 
 ## Compare all models that predict LENGTH other than NECK. Then order them from worst to best by its value of Adjusted-Rsquared (bigger is better), or by RSE (residual standard error) where smaller is better. 
 
@@ -38,7 +38,7 @@ abline(simp1)
 summary.lm(simp1)
 ```
 
-RSE: 7.511 ARS: 0.5073
+The prediction of overall length based on neck dimensions has a residual standard error of: 7.511 and an adjusted r-squared value of: 0.5073.
 
 ```{r}
 simp2 <- lm(LENGTH~HEADLEN,data=bears)
@@ -47,7 +47,7 @@ abline(simp2)
 summary.lm(simp2)
 ```
 
-RSE: 4.235 ARS: 0.8434
+The prediction of overall length based on neck dimensions has a residual standard error of: 4.235 and an adjusted r-squared value of: 0.8434.
 
 ```{r}
 simp3 <- lm(LENGTH~HEADWTH,data=bears)
@@ -56,7 +56,7 @@ abline(simp3)
 summary.lm(simp3)
 ```
 
-RSE: 7.32 ARS: 0.5321
+The prediction of overall length based on neck dimensions has a residual standard error of: 7.320 and an adjusted r-squared value of: 0.5321.
 
 ```{r}
 simp4 <- lm(LENGTH~CHEST,data=bears)
@@ -65,7 +65,7 @@ abline(simp4)
 summary.lm(simp4)
 ```
 
-RSE: 4.939 ARS: 0.7869
+The prediction of overall length based on neck dimensions has a residual standard error of: 4.939 and an adjusted r-squared value of: 0.7869.
 
 ```{r}
 simp5 <- lm(LENGTH~WEIGHT,data=bears)
@@ -74,4 +74,4 @@ abline(simp5)
 summary.lm(simp5)
 ```
 
-RSE: 5.432 ARS: 0.7423
+The prediction of overall length based on neck dimensions has a residual standard error of: 5.432 and an adjusted r-squared value of: 0.7423.
